@@ -397,3 +397,15 @@ yarn-error.log
 
 # End of https://www.gitignore.io/api/vue,venv,vuejs,python,pycharm,webstorm,virtualenv,pycharm+iml,pycharm+all
 
+# Created by https://www.gitignore.io/api/database
+# Edit at https://www.gitignore.io/?templates=database
+
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+
+# End of https://www.gitignore.io/api/datab
