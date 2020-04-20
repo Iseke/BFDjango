@@ -5,5 +5,5 @@ from mysite.api import views
 
 urlpatterns = [
     path('login/', obtain_jwt_token),
-    path('data/', views.GetTime.as_view())
+    path('reg/', views.RegistrationView.as_view())
 ]

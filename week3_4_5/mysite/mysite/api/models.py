@@ -15,6 +15,10 @@ class MyUser(AbstractUser):
     )
     role = models.PositiveSmallIntegerField(choices=ROLE_CHOICES, null=True)
 
+    def save(self, *args, **kwargs):
+        super(MyUser, self).save(*args, **kwargs)
+        Profile.objects.get_or_create(user=self)
+
     def __str__(self):
         return f'({self.id}) {self.username}'
 
